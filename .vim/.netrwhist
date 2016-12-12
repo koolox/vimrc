@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/johann/bookit/bookit.com/subdomains/images/static/javascript/r'
+let g:netrw_dirhist_2='/home/johann/bookit/bookit.com/subdomains/images/static/javascript/r/results/controller/facelift'
+let g:netrw_dirhist_3='/home/johann/bookit/bookit.com/subdomains/images/static/javascript/r/results/controller'
+let g:netrw_dirhist_4='/home/johann/bookit/bookit.com/subdomains/images/static/javascript/r/results'
+let g:netrw_dirhist_5='/home/johann/bookit/bookit.com/subdomains/images/static/javascript/r'
+let g:netrw_dirhist_6='/home/johann/bookit/bookit.com/subdomains/images/static/javascript/r/ui'
+let g:netrw_dirhist_7='/home/johann/bookit/bookit.com/subdomains/images/static/javascript/r/ui/facelift'
+let g:netrw_dirhist_8='/home/johann/bookit/lib/classes/Layout/Plugin'
+let g:netrw_dirhist_9='/home/johann/bookit/lib/classes/Layout/Plugin/SEO'
