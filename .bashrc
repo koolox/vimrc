@@ -127,8 +127,8 @@ alias cdclass='cd ~/repos/bookit/lib/classes'
 alias cdtest='cd ~/repos/bookit/lib/tests/UnitTests'
 alias mochaAll='~/repos/bookit/bookit.com/subdomains/images/static/javascript/node_modules/mocha/bin/mocha **/*.spec.js'
 alias sqldev='mysql -u johann.nieto -h 172.19.1.32 -p --ssl-mode DISABLED'
-alias sqlqa1='mysql -u johann.nieto -h bookit-qa1 -p --ssl-mode DISABLED'
-alias sqlqa7='mysql -u johann.nieto -h bookit-qa7 -p --ssl-mode DISABLED'
+alias sqlqa1='mysql -u johann.nieto -h bookit-qa1.com -p --ssl-mode DISABLED'
+alias sqlqa7='mysql -u johann.nieto -h bookit-qa7.com -p --ssl-mode DISABLED'
 
 mocha () { ~/repos/bookit/bookit.com/subdomains/images/static/javascript/node_modules/mocha/bin/mocha **/"$@"; }
 
