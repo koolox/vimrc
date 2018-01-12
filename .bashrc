@@ -113,9 +113,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias nbes='npm i && bower i && ember s'
 alias qa1='ssh johann.nieto@bookit-qa1.com'
 alias qa7='ssh johann.nieto@bookit-qa7.com'
-alias grepit='grep -rnIi --color' 
+alias grepit='grep -rnIi --exclude-dir={ext-2.2,extjs,_javascript,assets,emberjs,node_modules,bower_components,tests,dist,tmp} --color' 
 alias cdroot='cd ~/repos/bookit/'
 alias cdb='cd ~/repos/bookit/'
 alias cdrepos='cd ~/repos/'
@@ -125,10 +126,16 @@ alias cdjs='cd ~/repos/bookit/bookit.com/subdomains/images/static/javascript'
 alias cdtemp='cd ~/repos/bookit/lib/templates'
 alias cdclass='cd ~/repos/bookit/lib/classes'
 alias cdtest='cd ~/repos/bookit/lib/tests/UnitTests'
+alias cddat='cd ~/repos/ember-dateless-results'
+alias cdcore='cd ~/repos/ember-core-services'
+alias cdtp='cd ~/repos/ember-travel-planner'
 alias mochaAll='~/repos/bookit/bookit.com/subdomains/images/static/javascript/node_modules/mocha/bin/mocha **/*.spec.js'
-alias sqldev='mysql -u johann.nieto -h 172.19.1.32 -p --ssl-mode DISABLED'
-alias sqlqa1='mysql -u johann.nieto -h bookit-qa1.com -p --ssl-mode DISABLED'
-alias sqlqa7='mysql -u johann.nieto -h bookit-qa7.com -p --ssl-mode DISABLED'
+alias sqldev_old='mysql -u johann.nieto -h 172.19.1.32 -p --database=gds --ssl-mode DISABLED'
+alias sqldev='mysql -u johann.nieto -h 10.3.100.13 -p --database=gds --ssl-mode DISABLED'
+alias sqlqa1='mysql -u johann.nieto -h bookit-qa1.com -p --database=gds --ssl-mode DISABLED'
+alias sqlqa7='mysql -u johann.nieto -h bookit-qa7.com -p --database=gds --ssl-mode DISABLED'
+alias sqlintegration='mysql -u johann.nieto -h 10.10.10.241 -p --database=gds --ssl-mode DISABLED'
+alias sqlprod='mysql -u johann.nieto -h dbslave201.mco.ld -p --database=gds --ssl-mode DISABLED'
 
 mocha () { ~/repos/bookit/bookit.com/subdomains/images/static/javascript/node_modules/mocha/bin/mocha **/"$@"; }
 

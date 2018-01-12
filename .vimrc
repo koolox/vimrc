@@ -42,6 +42,7 @@ let g:ctrlp_custom_ignore = '\v[\/](vendor|build|rates.bookit.com|node_modules|b
 """"" Just some shortcuts
 iab db! echo '<pre>';<CR>var_dump();<cr>echo '</pre>';<ESC>bbbbb
 iab comm /**<CR><CR>/<Up>
+iab docs /*********<CR><CR>*********/<Up>
 set hlsearch
 set number
 set ignorecase
